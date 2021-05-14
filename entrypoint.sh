@@ -29,8 +29,8 @@ ibmcloud ks cluster config --cluster $CLUSTER_NAME
 
 # Execute the file
 echo "KUBERNETES COMMAND:"
-echo "kubectl apply -f $DEPLOYMENT_FILE -n $NS"
-kubectl apply -f $DEPLOYMENT_FILE -n $NS
+echo "kubectl apply -k $DEPLOYMENT_FILE -n $NS"
+kubectl apply -k $DEPLOYMENT_FILE -n $NS
 echo ""
 
 echo "My home is "
