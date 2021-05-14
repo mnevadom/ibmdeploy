@@ -25,7 +25,7 @@ if [ -z $NS ]; then
 fi
 
 echo "installing plugin tools for ks"
-curl -sL https://ibm.biz/idt-installer | bash
+ibmcloud plugin install container-service
 
 echo "Config cluster files... ibmcloud ks cluster config --cluster $CLUSTER_NAME"
 ibmcloud ks cluster config --cluster $CLUSTER_NAME
