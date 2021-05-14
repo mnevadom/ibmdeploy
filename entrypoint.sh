@@ -24,6 +24,9 @@ if [ -z $NS ]; then
   exit 1
 fi
 
+echo "installing plugin tools for ks"
+curl -sL https://ibm.biz/idt-installer | bash
+
 echo "Config cluster files... ibmcloud ks cluster config --cluster $CLUSTER_NAME"
 ibmcloud ks cluster config --cluster $CLUSTER_NAME
 
