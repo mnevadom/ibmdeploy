@@ -9,6 +9,8 @@ NS=$3
 echo "My home is "
 echo $HOME
 
+ls
+
 if [ -z $CLUSTER_NAME ]; then
   echo "CLUSTER_NAME is required"
   exit 1
